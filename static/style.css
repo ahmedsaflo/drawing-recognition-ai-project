@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #e50fcc, #2575fc);
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Happy Monkey', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    animation: fadeIn 1.5s ease-out;
+}
+canvas {
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 4);
+    margin-bottom: 20px;
+    background: #fff;
+    animation: popIn 0.7s ease-out;
+}
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #fff; 
+    border-radius: 50px;
+    background: linear-gradient(0deg, #611fc4, #bd90ed);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Happy Monkey', sans-serif;
+}
+#butonGrubu {
+    display: flex;
+    gap: 5%;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+button:active {
+    transform: translateY(0px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(200deg, #bd90ed, #611fc4);
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
