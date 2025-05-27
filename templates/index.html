@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahmin Oyunu</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.freepik.com/512/98/98755.png">
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <h1>Tahmin Etmemi İstediğin Şekli ÇİZ...</h1>
+        <canvas id="cizimAlani" width="512" height="512" style="border:4px solid #000;"></canvas>
+        <br>
+        <div id="butonGrubu">
+            <button id="kaydetButonu">Tahmin Et!</button>
+            <button id="temizleButonu">Tahtayı Temizle</button>
+        </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='Script.js') }}"></script>
+    </body>
+</html>
